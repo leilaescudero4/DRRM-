@@ -8,10 +8,24 @@
 body{
 font-family: Arial, Helvetica;
 margin:0;
-background:white;
 line-height:1.6;
-}
+}   
 
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:33%;
+height:100%;
+background-image:url("bpsu-logo.png");
+background-repeat:no-repeat;
+background-position:left center;
+background-size:contain;
+opacity:0.15;
+z-index:-1;
+}
+   
 header{
 background:maroon;
 color:white;
@@ -46,7 +60,7 @@ color:maroon;
 }
 
 h2{
-color:black ;
+color:black;
 margin-top:30px;
 }
 
@@ -66,11 +80,27 @@ color:white;
 margin-top:30px;
 }
 
+.student-info{
+position:fixed;
+right:10px;
+top:20px;
+width:3cm;
+text-align:center;
+font-size:14px;
+font-weight:bold;
+color: white;
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="student-info">
+<p>Leila Alexa Nicole Ann Escudero</p>
+<p>Student No:25-03889 </p>
+</div>
+   
 <header>
 <h1>Disaster Risk Reduction and Management (DRRM)</h1>
 <p> EARTHQUAKE DRILL AND DRRM POLICIES </p>
